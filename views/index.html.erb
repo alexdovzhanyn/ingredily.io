@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <title>ingredily.io</title>
+  <script src="scripts/core.js"></script>
+  <script src="scripts/recipes.js"></script>
+  <script src="scripts/jquery-1.11.3.min.js"></script>
+  <script src="scripts/typed.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body onload="intro()">
+  <div class="side-bar">
+    <img src="images/logo.png" class="logo" />
+    <h1 class="about-title">
+      Reverse-engineering the recipe.
+    </h1>
+    <p class="about-description">
+      Ingredily is the revolutionary tool that let's you reverse engineer the everyday recipe. What makes ingredily better than other recipe websites? You save time and money from grocery
+      shopping, because ingredily works with the ingredients you have in your kitchen! Just tell Taco, the recipe splitter,
+      what ingredients you have, and she'll search through a database full of recipes that match your ingredients; it's easy!
+    </p>
+    <a href="http://www.huedrop.com" class="huedrop">&copy; HueDrop Studio</a>
+  </div>
+  <div class="interface-container">
+    <div class="interface" id="intro">
+      <div class="intro">
+      </div>
+      <input class="input" id="input-1" type="text" placeholder="Enter your response here"/>
+      <input class="submit" type="submit" value="Submit" onclick="getUserName()"/>
+      <script type="text/javascript">
+        $('#input-1').keydown(function(e) {
+            if (e.keyCode == 13) {
+                getUserName();
+            }
+        });
+      </script>
+    </div>
+    <div class="hidden-interface" id="ingredientask">
+      <div class="ingredientask">
+      </div>
+      <input class="input" id="ingredients" type="text" placeholder="Enter your response here"/>
+      <input class="submit" type="submit" value="Submit" onclick="ingredientSplit()"/>
+      <script type="text/javascript">
+        $('#ingredients').keydown(function(e) {
+            if (e.keyCode == 13) {
+                ingredientSplit();
+            }
+        });
+      </script>
+    </div>
+    <div class="hidden-interface" id="confirm">
+      <div class="confirm">
+      </div>
+      <div class="selection">
+        <input class="submit" type="submit" value="Yes" onclick="showRecipe()"/>
+        <input class="submit" type="submit" value="No" onclick="getUserName()"/>
+      </div>
+    </div>
+    <div class="hidden-interface" id="recipes">
+      <div class="recipes">
+      </div>
+      <a href="" id="result"></a>
+      <div class="selection">
+        <input class="submit" type="submit" value="Start Over" onClick="window.location.reload()">/>
+      </div>
+    </div>
+  </div>
+</body>
