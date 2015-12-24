@@ -82,11 +82,7 @@ a {
   -moz-width: 100%;
   -ms-width: 100%;
   -o-width: 100%;
-  height: 5%;
-  -webkit-height: 5%;
-  -moz-height: 5%;
-  -ms-height: 5%;
-  -o-height: 5%;
+  height: inherit;
   position: fixed;
   z-index: -1;
   background-color: #3c4f61;
@@ -155,16 +151,16 @@ a {
 }
 
 .interface-container {
-  width: 80%;
-  -webkit-width: 80%;
-  -moz-width: 80%;
-  -ms-width: 80%;
-  -o-width: 80%;
-  margin-left: 10%;
-  -webkit-margin-left: 10%;
-  -moz-margin-left: 10%;
-  -ms-margin-left: 10%;
-  -o-margin-left: 10%;
+  width: 90%;
+  -webkit-width: 90%;
+  -moz-width: 90%;
+  -ms-width: 90%;
+  -o-width: 90%;
+  margin-left: 5%;
+  -webkit-margin-left: 5%;
+  -moz-margin-left: 5%;
+  -ms-margin-left: 5%;
+  -o-margin-left: 5%;
   margin-top: 20%;
   -webkit-margin-top: 20%;
   -moz-margin-top: 20%;
