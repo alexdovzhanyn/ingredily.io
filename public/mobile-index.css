@@ -366,4 +366,9 @@ a {
   margin-left: 2%;
   margin-bottom: 2%;
   color: #E86850;
+  font-size: 2vw;
+  -webkit-font-size: 2vw;
+  -moz-font-size: 2vw;
+  -ms-font-size: 2vw;
+  -o-font-size: 2vw;
 }
